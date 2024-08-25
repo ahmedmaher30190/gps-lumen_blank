@@ -38,7 +38,6 @@
         "post-root-package-install": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "composer install",
-            "php artisan key:generate",
             "php artisan jwt:secret",
             "php artisan migrate",
             "php artisan generate:x_api_key",
