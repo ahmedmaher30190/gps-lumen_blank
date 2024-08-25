@@ -4,6 +4,12 @@
     "require": {
         "php": ">=8.2"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ahmedmaher30190/gps-lumen_blank.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Vendor\\LibraryName\\": "src/"
