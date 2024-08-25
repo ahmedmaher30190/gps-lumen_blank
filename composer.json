@@ -22,7 +22,7 @@
             "Monolog": "src"
         }
     },
-    "minimum-stability": "dev-main",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-create-project-cmd": [
