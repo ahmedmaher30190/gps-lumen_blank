@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         \App\Console\Commands\GenerateSecretKey::class,
         \App\Console\Commands\AddServerToken::class,
+        \App\Console\Commands\ConfigureDatabase::class,
     ];
 
     /**

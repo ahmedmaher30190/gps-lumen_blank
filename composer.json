@@ -39,6 +39,8 @@
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "composer install",
             "php artisan jwt:secret",
+            "php artisan db:configure",
+            "php artisan migrate:fresh",
             "php artisan migrate",
             "php artisan generate:x_api_key",
             "php artisan add:server --ip=192.168.1.20 --name=servername"
