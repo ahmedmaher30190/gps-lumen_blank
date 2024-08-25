@@ -36,10 +36,10 @@
     ],
     "scripts": {
         "post-root-package-install": [
-            "@composer install",
-            "@php artisan key:generate"
+            "@composer install"
         ],
         "post-create-project-cmd": [
+            "@php artisan key:generate"،
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan jwt:secret",
             "@php artisan migrate",
