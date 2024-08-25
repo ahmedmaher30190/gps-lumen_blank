@@ -21,6 +21,8 @@
             "Monolog": "src"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "post-create-project-cmd": [
             "@composer install",
