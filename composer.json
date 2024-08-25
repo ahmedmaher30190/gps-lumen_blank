@@ -14,8 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.2",
-        "gpseducation/lumen_blank": "*"
+        "php": ">=8.2"
     },
     "autoload": {
         "psr-0": {
