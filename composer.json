@@ -15,14 +15,27 @@
     ],
     "require": {
     },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
     "autoload": {
         "psr-0": {
             "Monolog": "src"
         }
     },
-    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:ahmedmaher30190/gps-lumen_blank.git"
+        }
+    ],
     "prefer-stable": true,
     "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
         "post-create-project-cmd": [
             "@composer install",
             "@php artisan key:generate",
