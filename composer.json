@@ -1,5 +1,5 @@
 {
-    "name": "gps/lumen_blank",
+    "name": "gpseducation/lumen_blank",
     "type": "library",
     "description": "This is a core, empty project template used as the starting point for all custom projects developed by GPS Publishing and Distribution. It provides the foundational structure and essential configurations required to begin any new project tailored to our company's standards.",
     "keywords": ["GPS", "Lumen Blank", "server 2 server"],
