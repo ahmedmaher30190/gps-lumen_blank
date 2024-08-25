@@ -1,6 +1,6 @@
 {
     "name": "gpseducation/lumen_blank",
-    "type": "library",
+    "type": "project",
     "description": "This is a core, empty project template used as the starting point for all custom projects developed by GPS Publishing and Distribution. It provides the foundational structure and essential configurations required to begin any new project tailored to our company's standards.",
     "keywords": ["GPS", "Lumen Blank", "server 2 server"],
     "homepage": "https://github.com/ahmedmaher30190/gps-lumen_blank",
@@ -20,5 +20,15 @@
         "psr-0": {
             "Monolog": "src"
         }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@composer install",
+            "@php artisan key:generate",
+            "@php artisan jwt:secret",
+            "@php artisan migrate",
+            "@php artisan generate:x_api_key",
+            "@php artisan add:server --ip=192.168.1.20 --name=servername"
+        ]
     }
 }
