@@ -1,18 +1,24 @@
 {
     "name": "gps/lumen_blank",
+    "type": "library",
     "description": "This is a core, empty project template used as the starting point for all custom projects developed by GPS Publishing and Distribution. It provides the foundational structure and essential configurations required to begin any new project tailored to our company's standards.",
+    "keywords": ["GPS", "Lumen Blank", "server 2 server"],
+    "homepage": "https://github.com/ahmedmaher30190/gps-lumen_blank",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Maher",
+            "email": "ahmedmaher30190@gmail.com",
+            "homepage": "https://sabelhost.com",
+            "role": "S.Developer"
+        }
+    ],
     "require": {
         "php": ">=8.2"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ahmedmaher30190/gps-lumen_blank.git"
-        }
-    ],
     "autoload": {
-        "psr-4": {
-            "Vendor\\LibraryName\\": "src/"
+        "psr-0": {
+            "Monolog": "src"
         }
     }
 }
