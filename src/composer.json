@@ -1,0 +1,41 @@
+{
+    "name": "gps/lumen_blank",
+    "description": "This is a core, empty project template used as the starting point for all custom projects developed by GPS Publishing and Distribution. It provides the foundational structure and essential configurations required to begin any new project tailored to our company's standards.",
+    "keywords": ["framework", "laravel", "lumen", "gps"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "laravel/lumen-framework": "^10.0",
+        "tymon/jwt-auth": "^2.1"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

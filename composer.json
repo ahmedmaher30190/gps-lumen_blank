@@ -1,0 +1,14 @@
+{
+    "name": "gps/lumen_blank",
+    "description": "This is a core, empty project template used as the starting point for all custom projects developed by GPS Publishing and Distribution. It provides the foundational structure and essential configurations required to begin any new project tailored to our company's standards.",
+    "require": {
+        "php": ">=8.2"
+    },
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\LibraryName\\": "src/"
+        }
+    }
+}
