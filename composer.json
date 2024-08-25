@@ -15,14 +15,14 @@
     ],
     "require": {
         "php": ">=8.2",
-        "gpseducation/lumen_blank": "dev-main"
+        "gpseducation/lumen_blank": "*"
     },
     "autoload": {
         "psr-0": {
             "Monolog": "src"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-main",
     "prefer-stable": true,
     "scripts": {
         "post-create-project-cmd": [
