@@ -5,12 +5,13 @@
     "keywords": ["GPS", "Lumen Blank", "server 2 server"],
     "homepage": "https://github.com/ahmedmaher30190/gps-lumen_blank",
     "license": "MIT",
+    "version": "v1.0.1",
     "authors": [
         {
             "name": "Ahmed Maher",
             "email": "ahmedmaher30190@gmail.com",
             "homepage": "https://sabelhost.com",
-            "role": "S.Developer"
+            "role": "Technical manager"
         }
     ],
     "require": {
