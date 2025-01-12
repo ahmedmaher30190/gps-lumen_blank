@@ -20,8 +20,7 @@ class Authenticate
             return response()->json([
                 'status' => false,
                 'message' => 'Unauthorized user.',
-                'error_code' => 401,
-            ], 200);
+            ], 401);
         }
         return $next($request);
     }

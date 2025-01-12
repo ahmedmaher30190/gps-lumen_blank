@@ -19,6 +19,7 @@ class TokenAuthenticate
     public function handle($request, Closure $next, $guard = null)
     {
         header('Access-Control-Allow-Origin: *');
+        
         if(!empty($request->header('token'))){
             $token = json_decode(base64_decode($request->header('token')));
             $server_token = (string)substr($token->server_token, 0, 40);
@@ -27,15 +28,13 @@ class TokenAuthenticate
                 return response()->json([
                     'status' => true,
                     'message' => 'Invalid token',
-                    'error_code' => 401,
-                ], 200);
+                ], 401);
             }
         } else {
             return response()->json([
                 'status' => false,
                 'message' => 'Unauthorized user',
-                'error_code' => 401,
-            ], 200);
+            ], 401);
         }
         return $next($request);
     }

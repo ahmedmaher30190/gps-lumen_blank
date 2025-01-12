@@ -23,15 +23,13 @@ class ApiAuthenticate
                 return response()->json([
                     'status' => false,
                     'message' => 'Invalid x-api-key',
-                    'error_code' => 401,
-                ], 200);
+                ], 401);
             }
         } else {
             return response()->json([
                 'status' => false,
                 'message' => 'Unauthorized api',
-                'error_code' => 401,
-            ], 200);
+            ], 401);
         }
         return $next($request);
     }

@@ -29,8 +29,10 @@ class AddServerToken extends Command
      */
     public function handle()
     {
-        $serverIp = $this->option('ip');
-        $serverName = $this->option('name');
+        $serverIp = $this->ask('ip');
+        $serverName = $this->ask('name');
+        // $serverIp = $this->option('ip');
+        // $serverName = $this->option('name');
 
         if (empty($serverIp) || empty($serverName)) {
             $this->error('Both IP and Name options are required.');
