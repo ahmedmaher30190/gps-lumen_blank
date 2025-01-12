@@ -47,7 +47,7 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "v1.0.0",
+        "preferred-install": "v1.0.1",
         "sort-packages": true
     },
     "minimum-stability": "dev",
